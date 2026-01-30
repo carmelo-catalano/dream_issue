@@ -26,3 +26,4 @@ dream_result <- dream(voom_data, formula, rna_seq$metadata, BPPARAM = parallelCo
 print("computation completed successfully")
 
 ```
+I’ve downgraded variancePartition to version 1.36.3, BiocParallel to version 1.40.2, and parallel to version 4.4.3, but it hasn’t solved the problem.
