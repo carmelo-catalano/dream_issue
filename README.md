@@ -7,7 +7,9 @@ Error in manager$availability[[as.character(result$node)]] <- TRUE :
 Error in serialize(data, node$con, xdr = FALSE) :
   error writing to connection
 
-```{r}
+The entire project is available at:
+https://github.com/carmelo-catalano/dream_issue
+```R
 library("variancePartition")
 library("edgeR")
 
@@ -24,12 +26,3 @@ dream_result <- dream(voom_data, formula, rna_seq$metadata, BPPARAM = parallelCo
 print("computation completed successfully")
 
 ```
-
-Type any R code in the chunk, for example:
-```{r}
-mycars <- within(mtcars, { cyl <- ordered(cyl) })
-mycars
-```
-
-Now, click the **Run** button on the chunk toolbar to [execute](https://www.jetbrains.com/help/pycharm/r-markdown.html#run-r-code) the chunk code. The result should be placed under the chunk.
-Click the **Knit and Open Document** to build and preview an output.
